@@ -76,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\include;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -93,7 +93,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\include;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,17 +133,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="src\1.3.shaders\shaders.h" />
-    <ClInclude Include="src\1.3.shaders\use_shader_class\shaders.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\1.3.shaders\use_shader_class\res\fragment.shader" />
-    <None Include="src\1.3.shaders\use_shader_class\res\vertex.shader" />
+    <ClInclude Include="src\1.4.textures\box_texture\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\1.3.shaders\use_shader_class\1.3.shaders_use_class.cpp" />
-    <ClCompile Include="src\1.3.shaders\use_shader_class\shaders.cpp" />
+    <ClCompile Include="src\1.4.textures\box_texture\main.cpp" />
+    <ClCompile Include="src\1.4.textures\box_texture\shaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\1.4.textures\box_texture\fragment.shader" />
+    <None Include="src\1.4.textures\box_texture\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

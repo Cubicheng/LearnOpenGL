@@ -18,27 +18,30 @@
     <ClInclude Include="src\1.3.shaders\shaders.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\1.3.shaders\use_shader_class\shaders.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="src\1.4.textures\box_texture\shaders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.3.shaders\use_shader_class\res\fragment.shader">
-      <Filter>源文件</Filter>
-    </None>
-    <None Include="src\1.3.shaders\use_shader_class\res\vertex.shader">
-      <Filter>源文件</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\1.3.shaders\use_shader_class\1.3.shaders_use_class.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\1.3.shaders\use_shader_class\shaders.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Dependencies\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\1.4.textures\box_texture\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1.4.textures\box_texture\shaders.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\1.4.textures\box_texture\fragment.shader">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="src\1.4.textures\box_texture\vertex.shader">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
