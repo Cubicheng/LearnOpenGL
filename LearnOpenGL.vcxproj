@@ -133,8 +133,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\1.3.shaders\shaders.h" />
+    <ClInclude Include="src\1.3.shaders\use_shader_class\shaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\1.3.shaders\use_shader_class\res\fragment.shader" />
+    <None Include="src\1.3.shaders\use_shader_class\res\vertex.shader" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\1.2.hello_triangle\1.2.practice2.cpp" />
+    <ClCompile Include="src\1.3.shaders\use_shader_class\1.3.shaders_use_class.cpp" />
+    <ClCompile Include="src\1.3.shaders\use_shader_class\shaders.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
