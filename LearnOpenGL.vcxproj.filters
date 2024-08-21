@@ -15,32 +15,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\1.3.shaders\shaders.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\1.4.textures\box_texture\shaders.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\stb_image.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\1.5.transformation\shaders.h">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\1.4.textures\box_texture\main.cpp">
+    <ClCompile Include="src\1.5.transformation\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\1.4.textures\box_texture\shaders.cpp">
+    <ClCompile Include="src\1.5.transformation\shaders.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.4.textures\box_texture\fragment.shader">
+    <None Include="src\1.5.transformation\fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\1.4.textures\box_texture\vertex.shader">
+    <None Include="src\1.5.transformation\vertex.shader">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
