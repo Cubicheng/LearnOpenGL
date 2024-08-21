@@ -18,26 +18,26 @@
     <ClInclude Include="include\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\1.5.transformation\shaders.h">
+    <ClInclude Include="src\1.6.coordinate_systems\shaders.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1.6.coordinate_systems\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\1.5.transformation\main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\1.5.transformation\shaders.cpp">
+    <ClCompile Include="src\1.6.coordinate_systems\shaders.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.5.transformation\fragment.shader">
+    <None Include="src\1.6.coordinate_systems\fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\1.5.transformation\vertex.shader">
+    <None Include="src\1.6.coordinate_systems\vertex.shader">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>

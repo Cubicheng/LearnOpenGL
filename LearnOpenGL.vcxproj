@@ -134,16 +134,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="src\1.5.transformation\shaders.h" />
+    <ClInclude Include="src\1.6.coordinate_systems\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\1.5.transformation\main.cpp" />
-    <ClCompile Include="src\1.5.transformation\shaders.cpp" />
+    <ClCompile Include="src\1.6.coordinate_systems\main.cpp" />
+    <ClCompile Include="src\1.6.coordinate_systems\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.5.transformation\fragment.shader" />
-    <None Include="src\1.5.transformation\vertex.shader" />
+    <None Include="src\1.6.coordinate_systems\fragment.shader" />
+    <None Include="src\1.6.coordinate_systems\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
