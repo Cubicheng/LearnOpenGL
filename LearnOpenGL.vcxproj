@@ -134,16 +134,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="src\1.6.coordinate_systems\shaders.h" />
+    <ClInclude Include="src\1.7.camera\camera.h" />
+    <ClInclude Include="src\1.7.camera\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\1.6.coordinate_systems\main.cpp" />
-    <ClCompile Include="src\1.6.coordinate_systems\shaders.cpp" />
+    <ClCompile Include="src\1.7.camera\camera.cpp" />
+    <ClCompile Include="src\1.7.camera\main.cpp" />
+    <ClCompile Include="src\1.7.camera\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.6.coordinate_systems\fragment.shader" />
-    <None Include="src\1.6.coordinate_systems\vertex.shader" />
+    <None Include="src\1.7.camera\fragment.shader" />
+    <None Include="src\1.7.camera\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
