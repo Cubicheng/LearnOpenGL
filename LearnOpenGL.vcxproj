@@ -141,19 +141,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="src\2.1.colors\camera.h" />
-    <ClInclude Include="src\2.1.colors\shaders.h" />
+    <ClInclude Include="src\2.2.basic_lighting\camera.h" />
+    <ClInclude Include="src\2.2.basic_lighting\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\2.1.colors\camera.cpp" />
-    <ClCompile Include="src\2.1.colors\main.cpp" />
-    <ClCompile Include="src\2.1.colors\shaders.cpp" />
+    <ClCompile Include="src\2.2.basic_lighting\camera.cpp" />
+    <ClCompile Include="src\2.2.basic_lighting\main.cpp" />
+    <ClCompile Include="src\2.2.basic_lighting\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.1.colors\fragment.shader" />
-    <None Include="src\2.1.colors\light_fragment.shader" />
-    <None Include="src\2.1.colors\vertex.shader" />
+    <None Include="src\2.2.basic_lighting\fragment.shader" />
+    <None Include="src\2.2.basic_lighting\light_fragment.shader" />
+    <None Include="src\2.2.basic_lighting\light_vertex.shader" />
+    <None Include="src\2.2.basic_lighting\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
