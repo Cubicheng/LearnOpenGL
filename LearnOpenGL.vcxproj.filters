@@ -18,10 +18,10 @@
     <ClInclude Include="include\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\2.2.basic_lighting\camera.h">
+    <ClInclude Include="src\2.3.material\camera.h">
       <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\2.2.basic_lighting\shaders.h">
+    <ClInclude Include="src\2.3.material\shaders.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,27 +29,27 @@
     <ClCompile Include="Dependencies\glad\src\glad.c">
       <Filter>头文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.2.basic_lighting\camera.cpp">
+    <ClCompile Include="src\2.3.material\camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.2.basic_lighting\main.cpp">
+    <ClCompile Include="src\2.3.material\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.2.basic_lighting\shaders.cpp">
+    <ClCompile Include="src\2.3.material\shaders.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.2.basic_lighting\fragment.shader">
+    <None Include="src\2.3.material\fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.2.basic_lighting\light_fragment.shader">
+    <None Include="src\2.3.material\light_fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.2.basic_lighting\vertex.shader">
+    <None Include="src\2.3.material\light_vertex.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.2.basic_lighting\light_vertex.shader">
+    <None Include="src\2.3.material\vertex.shader">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
