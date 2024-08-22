@@ -83,6 +83,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;Opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -94,6 +96,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\include;$(SolutionDir)LearnOpenGL\Dependencies;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +105,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;Opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -134,18 +141,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="src\1.7.camera\camera.h" />
-    <ClInclude Include="src\1.7.camera\shaders.h" />
+    <ClInclude Include="src\2.1.colors\camera.h" />
+    <ClInclude Include="src\2.1.colors\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\1.7.camera\camera.cpp" />
-    <ClCompile Include="src\1.7.camera\main.cpp" />
-    <ClCompile Include="src\1.7.camera\shaders.cpp" />
+    <ClCompile Include="src\2.1.colors\camera.cpp" />
+    <ClCompile Include="src\2.1.colors\main.cpp" />
+    <ClCompile Include="src\2.1.colors\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.7.camera\fragment.shader" />
-    <None Include="src\1.7.camera\vertex.shader" />
+    <None Include="src\2.1.colors\fragment.shader" />
+    <None Include="src\2.1.colors\light_fragment.shader" />
+    <None Include="src\2.1.colors\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
