@@ -140,20 +140,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="src\2.4.lighting_maps\camera.h" />
-    <ClInclude Include="src\2.4.lighting_maps\shaders.h" />
+    <ClInclude Include="src\2.5.light_casters\spotlight\camera.h" />
+    <ClInclude Include="src\2.5.light_casters\spotlight\shaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\glad\src\glad.c" />
-    <ClCompile Include="src\2.4.lighting_maps\camera.cpp" />
-    <ClCompile Include="src\2.4.lighting_maps\main.cpp" />
-    <ClCompile Include="src\2.4.lighting_maps\shaders.cpp" />
+    <ClCompile Include="src\2.5.light_casters\spotlight\camera.cpp" />
+    <ClCompile Include="src\2.5.light_casters\spotlight\main.cpp" />
+    <ClCompile Include="src\2.5.light_casters\spotlight\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.4.lighting_maps\fragment.shader" />
-    <None Include="src\2.4.lighting_maps\light_fragment.shader" />
-    <None Include="src\2.4.lighting_maps\light_vertex.shader" />
-    <None Include="src\2.4.lighting_maps\vertex.shader" />
+    <None Include="src\2.5.light_casters\spotlight\fragment.shader" />
+    <None Include="src\2.5.light_casters\spotlight\light_fragment.shader" />
+    <None Include="src\2.5.light_casters\spotlight\light_vertex.shader" />
+    <None Include="src\2.5.light_casters\spotlight\vertex.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
