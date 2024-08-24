@@ -18,10 +18,10 @@
     <ClInclude Include="include\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\2.5.light_casters\spotlight\camera.h">
+    <ClInclude Include="src\2.6.multiple_lights\camera.h">
       <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\2.5.light_casters\spotlight\shaders.h">
+    <ClInclude Include="src\2.6.multiple_lights\shaders.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,27 +29,27 @@
     <ClCompile Include="Dependencies\glad\src\glad.c">
       <Filter>头文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.5.light_casters\spotlight\camera.cpp">
+    <ClCompile Include="src\2.6.multiple_lights\camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.5.light_casters\spotlight\main.cpp">
+    <ClCompile Include="src\2.6.multiple_lights\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.5.light_casters\spotlight\shaders.cpp">
+    <ClCompile Include="src\2.6.multiple_lights\shaders.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.5.light_casters\spotlight\fragment.shader">
+    <None Include="src\2.6.multiple_lights\fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.5.light_casters\spotlight\light_fragment.shader">
+    <None Include="src\2.6.multiple_lights\light_fragment.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.5.light_casters\spotlight\light_vertex.shader">
+    <None Include="src\2.6.multiple_lights\light_vertex.shader">
       <Filter>源文件</Filter>
     </None>
-    <None Include="src\2.5.light_casters\spotlight\vertex.shader">
+    <None Include="src\2.6.multiple_lights\vertex.shader">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
