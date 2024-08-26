@@ -13,7 +13,8 @@ uniform mat4 projection;
 
 void main(){
 	FragPos = vec3( model * vec4(aPos, 1.0) );
-	Normal = mat3(transpose(inverse(model))) * aNormal;
+	//solve the lighting problem while scaling: remember to normalize the Normal vector
+	Normal = normalize(mat3(transpose(inverse(model))) * aNormal);
     gl_Position = projection * view * model * vec4(aPos, 1.0);
 	TexCoords = aTexCoords;
 }

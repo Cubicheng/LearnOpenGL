@@ -97,7 +97,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\include;$(SolutionDir)LearnOpenGL\Dependencies;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\Assimap\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\Dependencies\assimp-5.3.1\build\include;$(SolutionDir)LearnOpenGL\include;$(SolutionDir)LearnOpenGL\Dependencies;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\include;$(SolutionDir)LearnOpenGL\Dependencies\assimp-5.3.1\include;$(SolutionDir)LearnOpenGL\Dependencies\glad\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -106,11 +106,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Opengl32.lib;glfw3_mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Dependencies\Assimap\lib;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3_mt.lib;Opengl32.lib;assimp-vc143-mt.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Dependencies\assimp-5.3.1\build\lib\Release;$(SolutionDir)LearnOpenGL\Dependencies\assimp-5.3.1\build\contrib\zlib\Release;$(SolutionDir)LearnOpenGL\Dependencies\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
+      <ForceFileOutput>Enabled</ForceFileOutput>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

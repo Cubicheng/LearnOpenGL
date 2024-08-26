@@ -177,7 +177,6 @@ int main() {
 
 	//glEnable(GL_CULL_FACE);
 
-	
 	Shader shader("src/3.model/vertex.shader", "src/3.model/fragment.shader");
 	Shader lightShader("src/3.model/light_vertex.shader", "src/3.model/light_fragment.shader");
 
@@ -282,7 +281,7 @@ int main() {
 		shader.setUniformMatrix4fv("projection", projection);
 
 		model = glm::mat4(1.0f);
-		model = glm::scale(model, glm::vec3(1.0f));
+		model = glm::scale(model, glm::vec3(0.5f));
 		shader.setUniformMatrix4fv("model", model);
 
 		ourModel.Draw(shader);
@@ -294,10 +293,10 @@ int main() {
 		glfwPollEvents();
 	}
 
-	/*glDeleteBuffers(1, &vertexBufferObject);
-	glDeleteVertexArrays(1, &vertexArrayObject);
+	glDeleteBuffers(1, &vertexBufferObject);
+	glDeleteVertexArrays(1, &lightVAO);
 	shader.deleteProgram();
-	lightShader.deleteProgram();*/
+	lightShader.deleteProgram();
 
 	glfwTerminate();
 

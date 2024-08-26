@@ -6,7 +6,6 @@
 #include "shaders.h"
 #include "camera.h"
 
-#define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
 int screenWidth = 1900, screenHeight = 1200;
